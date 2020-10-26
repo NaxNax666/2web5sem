@@ -1,0 +1,35 @@
+table{border:1px solid maroon; weigth:800px; background: #E6E6FA;} /*СТиль таблицы в целом */
+tr{height:60;}
+td.htop{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; border-radius: 20px; background:  linear-gradient(180deg, #ffffff 0%, #ADD8E6 50%);}/* Стиль первой строчки*/
+td.first{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; border-radius: 10px; background:linear-gradient(180deg,  #ADD8E6 100%, #ffffff 100%);}/* 1-2 ячейка 2строчки*/
+td.second{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background:  linear-gradient(100deg, #ADD8E6 0%, #008B8B 50%);}/*3 ячейка 2-3 строчки */
+td.third{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background: linear-gradient(180deg, #FF00FF 100%, #ffffff 100%);}/* 1 ячейка 3-4 строчки*/
+td.fourth{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background: linear-gradient(180deg, #9370DB 100%, #ffffff 100%); }/* 2 ячейка 3 строчки*/
+td.fifth{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background: linear-gradient(180deg, #808000 100%, #ffffff 100%);}/*2 ячейка 4 строчки */
+td.sixth{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background:linear-gradient(180deg, #008B8B 100%, #ffffff 100%);}/*3 ячейка 4 строчки */
+td.seventh{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background:linear-gradient(180deg, #7B68EE 100%, #ffffff 100%);}/*1 ячейка 5 строчки */
+td.eighth{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background:linear-gradient(180deg, #00FF7F 100%, #ffffff 100%); }/*1 ячейка 6 строчки */
+td.ninth{border-bottom: 1px solid maroon; border-top:1px solid maroon; border-spacing:0px; background: linear-gradient(180deg, #5F9EA0 100%, #ffffff 100%) ;}/*1 ячейка 7 строчки */
+.Fsttext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 20px; color: #522719;font-weight:bold;}/*  текст 1-2 ячейка 2строчки*/
+.Sndtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #FFCA82;}/*текст 3 ячейка 2-3 строчки*/
+.Sndbtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 20px; color: #FFCA82; font-weight:bold;}/*Заголовок 3 ячейка 2-3 строчки*/
+.Trdtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #D6FF00;}/* текст 1 ячейка 3-4 строчки*/
+.Fothtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #fffe74;}/* текст 2 ячейка 3 строчки*/
+.Fothbtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 20px; color: #fffe74; font-weight:bold;}/* заголовок 2 ячейка 3 строчки*/
+.Fithtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #390555;}/* текст 2 ячейка 4 строчки*/
+.Fithbtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 20px; color: #390555;font-weight:bold;}/* Заголовок 2 ячейка 4 строчки*/
+.Sithtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #f3AA6d;}/* текст 3 ячейка 4 строчки*/
+.Ethtext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 15px; color: #ff3d00;}/* текст 1 ячейка 6 строчки*/
+.htext{font-family:"Comic Sans MS", "Comic Sans", cursive; font-size: 30px; color: #ff3d00;}/*Заголовок*/
+
+#center{text-align: center;}
+.input1 {border: 2px solid red; border-radius: 15px;}/*1-2 ячейка 2строчки*/
+.input2 {border: 5px solid green; border-radius: 20px;}/*3 ячейка 2-3 строчки */
+.input3 {border: 10px solid black; border-radius: 15px;}/* 1 ячейка 3-4 строчки*/
+.input4 {border: 2px solid yellow; border-radius: 15px;}/* 2 ячейка 3 строчки*/
+.input5 {border: 2px solid yellow; border-radius: 15px;}/*2 ячейка 4 строчки */
+.input6 {border: 5px solid purple; border-radius: 7px;}/*3 ячейка 4 строчки */
+.input7 {border: 2px solid aqua; color: Fushsia;}/*1 ячейка 5 строчки */
+.input8 {border: 2px solid DarkSlateGray; border-radius: 20px;}/*1 ячейка 6 строчки */
+.input9 {border: 2px solid gray; border-radius: 15px;}/*1 ячейка 7 строчки */
+

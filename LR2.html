@@ -1,0 +1,100 @@
+<HTML>
+<HEAD>
+	<TITLE>Доставка пиццы</TITLE>
+	<link href="mystyle.css" rel="stylesheet">
+</HEAD>
+<BODY>
+	<form method="post" action="http://193.233.69.42:15980/testvvk/test_control.php">
+
+		<TABLE >
+			<CAPTION></CAPTION>
+			<tr>
+      		<td class="htop" colspan = 3><div id="center"><font class="htext">Доставка пиццы</font></div></td>
+      
+   			</tr>
+			<tr height = 120>
+				<td class="first" colspan = "2" align="center"><div id="center"><font class="Fsttext">Выберите Пиццу и укажите количество</font></div>
+				<select class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option selected value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"  pattern="[0-9]{3}" name="prm5" size=10 class="input1"><br>
+   				<select class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option selected value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"  pattern="[0-9]{3}" name="prm6" size=10 class="input1"><br>
+   				<select class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option selected value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"  pattern="[0-9]{3}" name="prm7" size=10 class="input1"><br>
+   				<select class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option selected value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"  pattern="[0-9]{3}" name="prm8" size=10 class="input1">
+   				</td>
+				
+				<td rowspan="2" align="left" valign="top" class="second">
+					<div class="Sndbtext">Добавить в заказ:</div>
+   					<input type="checkbox" name="prm1" value="Салат &quotЦезарь&quot" class="input2"><font class="Sndtext">Салат "Цезарь"</font><br>
+   					<input type="checkbox" name="prm2" value="Салат &quotГреческий&quot" class="input2"><font class="Sndtext">Салат "Греческий"</font><br>
+   					<input type="checkbox" name="prm3" value="Морс Облепиховый" class="input2"><font class="Sndtext">Морс Облепиховый</font><br>
+   					<input type="checkbox" name="prm4" value="Pepsi 1л" class="input2"><font class="Sndtext">Pepsi 1л</font><br>
+   					<input type="checkbox" name="prm5" value="Сок &quotЯ&quot Вишневый" class="input2"><font class="Sndtext">Сок "Я" Вишневый</font><br>
+   					
+				</td>
+			</tr>
+			<tr height = 60>
+				<td rowspan="2" align="right" class="third">
+					<font class="trdtext">Больше начинки</font><input type="checkbox" name="prm14" value="Больше начинки" class="input3"><br>
+   					<font class="trdtext">Сырный борт</font><input type="checkbox" name="prm15" value="Сырный борт" class="input3">
+   					
+				</td>
+				<td align="left" class="fourth"><div class="fothbtext">Диаметр пицц:</div>
+
+				<input type="radio" name="prm9" value="25" class="input4"> <font class="fothtext">25 </font>
+   				<input type="radio" name="prm9" value="35" class="input4"> <font class="fothtext">35 </font>
+   				<input type="radio" name="prm9" value="45" class="input4"> <font class="fothtext">45</font>
+   				
+				</td>
+				
+			</tr>
+			<tr height = 80>
+				
+				<td align="left" class="fifth">
+				<div class="fithbtext">Тесто:</div>
+				<input type="radio" name="prm10" value="тонкое" class="input5"> <font class="fithtext">тонкое</font><br>
+   				<input type="radio" name="prm10" value="классическое" class="input5"> <font class="fithtext">классическое</font>
+   				
+				</td>
+				<td align="left" class="sixth">
+					<div class="sithtext"> Адрес доставки:<div>
+					<input type="text" name="prm11" size=20 class = "input6">
+					<div class="sithtext">Номер скидочной карты:<div>
+					<input type="text"  pattern="[0-9]{16}" name="prm12" size=20 class = "input6">
+
+				</td>
+			</tr>
+			<tr height = 60>
+				<td align="center" class="seventh"><input type = "submit" value = "Оформить заказ" class = "input7"></td>
+				<td align="center" class="eighth">
+					<div class="ethtext">Номер телефона для связи:</div>
+					<input type="tel"  pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="prm13" size=20 class = "input8">
+				</td>
+				<td align="center" class="ninth">
+					<textarea name="prm13" cols = 30 rows = 3 placeholder="Дополнительные пожелания" class = "input9"></textarea>
+				</td>
+			</tr>
+		</TABLE>
+</BODY>
+</HTML>
