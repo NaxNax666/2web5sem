@@ -2,9 +2,113 @@
 <HEAD>
 	<TITLE>Доставка пиццы</TITLE>
 	<link href="mystyle.css" rel="stylesheet">
+	<script>
+function validate()  {
+        var a='';
+		    if (document.forms[0].prm19.value == "none")  {
+                a+='Выберите первую пиццу \n';
+                
+        }
+        if ((document.forms[0].prm20.value.length == 0) )  {
+                a+='Введите количество первой пиццы \n';
+                
+        }
+        
+        if ((/\D/.test(document.forms[0].prm20.value)) )  {
+                a+='Количество первой пиццы должно быть числом\n';
+                
+        }
+        
+        if (document.forms[0].prm16.value == "none")  {
+                a+='Выберите вторую пиццу\n';
+                
+        }
+
+        if ((document.forms[0].prm6.value.length == 0) )  {
+                a+='Введите количество второй пиццы\n';
+                
+        }
+        
+        if ((/\D/.test(document.forms[0].prm6.value)) )  {
+                a+='Количество второй пиццы должно быть числом\n';
+                
+        }
+        
+        if (document.forms[0].prm17.value == "none")  {
+                a+='Выберите третью пиццу\n';
+                
+        }
+        if ((document.forms[0].prm7.value.length == 0) )  {
+                a+='Введите количество третьей пиццы\n';
+                
+        }
+        
+        if ((/\D/.test(document.forms[0].prm7.value)) )  {
+                a+='Количество третьей пиццы должно быть числом\n';
+                
+        }
+        
+        if (document.forms[0].prm18.value == "none")  {
+                a+='Выберите четвертую пиццу\n';
+                
+        }
+        if ((document.forms[0].prm8.value.length == 0) )  {
+                a+='Введите количество четвертой пиццы\n';
+                
+        }
+        
+        if ((/\D/.test(document.forms[0].prm8.value)) )  {
+                a+='Количество четвертой пиццы должно быть числом\n';
+              
+        }
+        
+        if (document.forms[0].prm9.value == 0)  {
+                a+='Выберите размер пиццы в поле "Диаметр пиццы"\n';
+                
+        }
+        if (document.forms[0].prm10.value == 0)   {
+                a+='Выберите толщину теста в поле "Тесто"\n';
+                
+        }
+        if (document.forms[0].prm11.value.length == 0)   {
+                a+='Поле "Адрес доставки" не должно быть пустым\n';
+                
+        }
+        if (document.forms[0].prm12.value.length == 0)   {
+                a+='Поле "Номер скидочной карты" не должно быть пустым\n';
+                
+        }
+        if (!(/\b\d{16}\b/.test(document.forms[0].prm12.value)) )  {
+                a+='Поле "Номер скидочной карты" должно быть 16-ти значным числом\n';
+                
+        }
+        if (document.forms[0].prm13.value.length == 0)   {
+                a+='Поле "Номер телефона для связи" не должно быть пустым\n';
+                
+        }
+        if (!(/[+][7][0-9]{3}[-][0-9]{3}[-][0-9]{2}[-][0-9]{2}/.test(document.forms[0].prm13.value)) )  {
+                a+='Поле "Номер телефона для связи" должно быть в формате "+7XXX-XXX-XX-XX"\n';
+                
+        }
+        if (document.forms[0].prm14.value.length == 0)   {
+                a+='Поле "Дополнительные пожелания" не должно быть пустым\n';
+                
+        }
+        if (a!==''){
+          alert(a);
+          return false;
+
+        }
+
+        
+         
+        
+       return true;
+}
+</script>
 </HEAD>
 <BODY>
-	<form method="post" action="http://193.233.69.42:15980/testvvk/test_control.php">
+	<form method="post" action="http://193.233.69.42:15980/testvvk/test_control.php" onSubmit="return validate()">
 
 		<TABLE >
 			<CAPTION></CAPTION>
@@ -14,34 +118,38 @@
    			</tr>
 			<tr height = 120>
 				<td class="first" colspan = "2" align="center"><div id="center"><font class="Fsttext">Выберите Пиццу и укажите количество</font></div>
-				<select class="input1">
+				<select name="prm19" class="input1">
     				<option disabled>Выберите пиццу</option>
-    				<option selected value="4 сыра">4 Сыра</option>
-    				<option value="Пеперони">Пеперони</option>
-    				<option value="Ветчина и грибы">Ветчина и грибы</option>
-    				<option value="Мексиканская">Мексиканская</option>
-   				</select> <input type="text"  pattern="[0-9]{3}" name="prm5" size=10 class="input1"><br>
-   				<select class="input1">
-    				<option disabled>Выберите пиццу</option>
-    				<option value="4 сыра">4 Сыра</option>
-    				<option selected value="Пеперони">Пеперони</option>
-    				<option value="Ветчина и грибы">Ветчина и грибы</option>
-    				<option value="Мексиканская">Мексиканская</option>
-   				</select> <input type="text"  pattern="[0-9]{3}" name="prm6" size=10 class="input1"><br>
-   				<select class="input1">
-    				<option disabled>Выберите пиццу</option>
-    				<option value="4 сыра">4 Сыра</option>
-    				<option value="Пеперони">Пеперони</option>
-    				<option selected value="Ветчина и грибы">Ветчина и грибы</option>
-    				<option value="Мексиканская">Мексиканская</option>
-   				</select> <input type="text"  pattern="[0-9]{3}" name="prm7" size=10 class="input1"><br>
-   				<select class="input1">
-    				<option disabled>Выберите пиццу</option>
+    				<option value="none"></option>
     				<option value="4 сыра">4 Сыра</option>
     				<option value="Пеперони">Пеперони</option>
     				<option value="Ветчина и грибы">Ветчина и грибы</option>
-    				<option selected value="Мексиканская">Мексиканская</option>
-   				</select> <input type="text"  pattern="[0-9]{3}" name="prm8" size=10 class="input1">
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"  name="prm20" size=10 class="input1"><br>
+   				<select name="prm16" class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="none"></option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"   name="prm6" size=10 class="input1"><br>
+   				<select name="prm17" class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="none"></option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"   name="prm7" size=10 class="input1"><br>
+   				<select name="prm18" class="input1">
+    				<option disabled>Выберите пиццу</option>
+    				<option value="none"></option>
+    				<option value="4 сыра">4 Сыра</option>
+    				<option value="Пеперони">Пеперони</option>
+    				<option value="Ветчина и грибы">Ветчина и грибы</option>
+    				<option value="Мексиканская">Мексиканская</option>
+   				</select> <input type="text"   name="prm8" size=10 class="input1">
    				</td>
 				
 				<td rowspan="2" align="left" valign="top" class="second">
@@ -56,7 +164,7 @@
 			</tr>
 			<tr height = 60>
 				<td rowspan="2" align="right" class="third">
-					<font class="trdtext">Больше начинки</font><input type="checkbox" name="prm14" value="Больше начинки" class="input3"><br>
+					<font class="trdtext">Больше начинки</font><input type="checkbox" value="Больше начинки" class="input3"><br>
    					<font class="trdtext">Сырный борт</font><input type="checkbox" name="prm15" value="Сырный борт" class="input3">
    					
 				</td>
@@ -81,7 +189,7 @@
 					<div class="sithtext"> Адрес доставки:<div>
 					<input type="text" name="prm11" size=20 class = "input6">
 					<div class="sithtext">Номер скидочной карты:<div>
-					<input type="text"  pattern="[0-9]{16}" name="prm12" size=20 class = "input6">
+					<input type="text"   name="prm12" size=20 class = "input6">
 
 				</td>
 			</tr>
@@ -89,10 +197,10 @@
 				<td align="center" class="seventh"><input type = "submit" value = "Оформить заказ" class = "input7"></td>
 				<td align="center" class="eighth">
 					<div class="ethtext">Номер телефона для связи:</div>
-					<input type="tel"  pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="prm13" size=20 class = "input8">
+					<input type="text"   name="prm13" size=20 class = "input8">
 				</td>
 				<td align="center" class="ninth">
-					<textarea name="prm13" cols = 30 rows = 3 placeholder="Дополнительные пожелания" class = "input9"></textarea>
+					<textarea name="prm14" cols = 30 rows = 3 placeholder="Дополнительные пожелания" class = "input9"></textarea>
 				</td>
 			</tr>
 		</TABLE>
